@@ -1,0 +1,115 @@
+.app__Hero {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 4rem 5rem;
+
+    &__content {
+        flex: 0 0 50%;
+        font-family: $font-family  !important;
+
+        .testmonialPara {
+            font-weight: 400;
+            font-size: 51.252px;
+            line-height: 85%;
+            letter-spacing: -0.02em;
+            text-transform: uppercase;
+            color: $color-white;
+        }
+
+        h1 {
+            font-family: $font-family;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 109.704px;
+            line-height: 94.5%;
+            letter-spacing: -0.02em;
+            text-transform: uppercase;
+            margin: 1.5rem 0;
+        }
+
+        h3 {
+            font-family: $font-family;
+            color: $color-green;
+            font-weight: 600;
+            font-size: 51.252px;
+            line-height: 85%;
+            letter-spacing: -0.02em;
+            text-transform: uppercase;
+        }
+
+        p {
+            font-family: $font-family;
+            color: $color-grey-black;
+            margin: 2rem 0;
+            font-weight: 400;
+            font-size: 25px;
+            line-height: 161.5%;
+            /* or 40px */
+
+            letter-spacing: -0.02em;
+            text-transform: uppercase;
+        }
+
+        &__buttons {
+            display: flex;
+            flex-direction: row;
+            padding-top: 2rem;
+            button {
+                border: none;
+                outline: none;
+                padding: 1rem 2.7rem;
+                font-weight: 500;
+                font-size: 37.9952px;
+                color: $color-white;
+                transition: .3s all;
+
+                &:nth-of-type(1) {
+                    background-color: $color-blue;
+                    margin-right: 2rem;
+                }
+
+                &:nth-of-type(2) {
+                    background-color: transparent;
+                    span{
+                        margin-left: 1rem;
+                        color: $color-grey-black;
+                    }
+
+                    &:hover span{
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+
+    &__image {
+        flex: 1;
+        margin-left: 1rem;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: flex-end;
+        position: relative;
+        &__label{
+            // font-family: $font-family;
+            position: absolute;
+            background-color: $color-white;
+            color: $color-black;
+            bottom: 0%;
+            right: 15%;
+            width: 606.84px;
+            font-weight: 600;
+            font-size: 51.252px;
+            line-height: 85%;
+            letter-spacing: -0.04em;
+            text-align: center;
+            padding: 1rem;
+        }
+        img {
+            max-width: 606.84px;
+            max-height: 710px;
+        }
+    }
+}

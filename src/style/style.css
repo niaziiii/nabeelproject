@@ -4,6 +4,114 @@
   box-sizing: border-box;
 }
 
+.a {
+  font-family: "Courier New", Courier, monospace;
+}
+
+.app__Hero {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 4rem 5rem;
+}
+.app__Hero__content {
+  flex: 0 0 50%;
+  font-family: "Courier New", Courier, monospace !important;
+}
+.app__Hero__content .testmonialPara {
+  font-weight: 400;
+  font-size: 51.252px;
+  line-height: 85%;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.app__Hero__content h1 {
+  font-family: "Courier New", Courier, monospace;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 109.704px;
+  line-height: 94.5%;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  margin: 1.5rem 0;
+}
+.app__Hero__content h3 {
+  font-family: "Courier New", Courier, monospace;
+  color: #2CFE80;
+  font-weight: 600;
+  font-size: 51.252px;
+  line-height: 85%;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+.app__Hero__content p {
+  font-family: "Courier New", Courier, monospace;
+  color: #252525;
+  margin: 2rem 0;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 161.5%;
+  /* or 40px */
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+.app__Hero__content__buttons {
+  display: flex;
+  flex-direction: row;
+  padding-top: 2rem;
+}
+.app__Hero__content__buttons button {
+  border: none;
+  outline: none;
+  padding: 1rem 2.7rem;
+  font-weight: 500;
+  font-size: 37.9952px;
+  color: #FFFFFF;
+  transition: 0.3s all;
+}
+.app__Hero__content__buttons button:nth-of-type(1) {
+  background-color: #1D51FD;
+  margin-right: 2rem;
+}
+.app__Hero__content__buttons button:nth-of-type(2) {
+  background-color: transparent;
+}
+.app__Hero__content__buttons button:nth-of-type(2) span {
+  margin-left: 1rem;
+  color: #252525;
+}
+.app__Hero__content__buttons button:nth-of-type(2):hover span {
+  color: white;
+}
+.app__Hero__image {
+  flex: 1;
+  margin-left: 1rem;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-end;
+  position: relative;
+}
+.app__Hero__image__label {
+  position: absolute;
+  background-color: #FFFFFF;
+  color: #050407;
+  bottom: 0%;
+  right: 15%;
+  width: 606.84px;
+  font-weight: 600;
+  font-size: 51.252px;
+  line-height: 85%;
+  letter-spacing: -0.04em;
+  text-align: center;
+  padding: 1rem;
+}
+.app__Hero__image img {
+  max-width: 606.84px;
+  max-height: 710px;
+}
+
 body {
   background-color: #050407;
 }/*# sourceMappingURL=style.css.map */
