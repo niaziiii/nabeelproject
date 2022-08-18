@@ -4,10 +4,6 @@
   box-sizing: border-box;
 }
 
-.a {
-  font-family: "Courier New", Courier, monospace;
-}
-
 .app__Hero {
   display: flex;
   flex-direction: row;
@@ -16,7 +12,7 @@
 }
 .app__Hero__content {
   flex: 0 0 50%;
-  font-family: "Courier New", Courier, monospace !important;
+  font-family: "Montserrat" !important;
 }
 .app__Hero__content .testmonialPara {
   font-weight: 400;
@@ -27,7 +23,7 @@
   color: #FFFFFF;
 }
 .app__Hero__content h1 {
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 800;
   font-size: 109.704px;
@@ -37,7 +33,7 @@
   margin: 1.5rem 0;
 }
 .app__Hero__content h3 {
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Montserrat";
   color: #2CFE80;
   font-weight: 600;
   font-size: 51.252px;
@@ -46,7 +42,7 @@
   text-transform: uppercase;
 }
 .app__Hero__content p {
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Montserrat";
   color: #252525;
   margin: 2rem 0;
   font-weight: 400;
