@@ -1,0 +1,47 @@
+.app__statics{
+    width: 100%;
+    margin: 3rem 0;
+    &__container{
+        margin-left: auto;
+        padding: 1rem 0;
+        width: 80%;
+        background-color: $color-blue;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        padding-right: 3rem;
+        &__items{
+            display: flex;
+            flex-direction: column;
+            margin-left: 5rem;
+            color: $color-white;
+            text-align: center;
+            b{
+                font-size: 70px;
+            }
+            p{
+                margin: auto;
+                width: 70%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:900px) {
+    .app__statics{
+        &__container{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            padding: 1rem 0%;
+            justify-content: space-around;
+            &__items{
+                margin-left: 0%;
+                text-align: center;
+                p{width: 100%;}
+            }
+        }
+    }
+}
+
