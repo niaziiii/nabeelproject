@@ -4,12 +4,12 @@
     &__container{
         margin-left: auto;
         padding: 1rem 0;
-        width: 80%;
+        width: 50%;
         background-color: $color-blue;
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
-        align-items: center;
+        align-items: flex-start;
         padding-right: 3rem;
         &__items{
             display: flex;
@@ -17,12 +17,17 @@
             margin-left: 5rem;
             color: $color-white;
             text-align: center;
-            b{
+            h3
+            {
+                font-weight: 900;
                 font-size: 70px;
+                font-family: $font-family;
             }
             p{
                 margin: auto;
-                width: 70%;
+                font-family: $font-family; 
+                font-size: 22px;
+                width: 90%;
             }
         }
     }
@@ -39,8 +44,8 @@
             &__items{
                 margin-left: 0%;
                 text-align: center;
-                b{font-size: 55px;}
-                p{width: 100%;}
+                h3{font-size: 55px; font-weight: 900 !important;}
+                p{width: 95%; font-family: $font-family; font-size: 18px;}
             }
         }
     }

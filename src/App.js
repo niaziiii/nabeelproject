@@ -7,6 +7,8 @@ function App() {
     <div className="App">
      <sections.Hero />
      <sections.statics />
+     <sections.design />
+
     </div>
   );
 }
