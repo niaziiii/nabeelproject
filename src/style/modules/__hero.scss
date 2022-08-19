@@ -19,7 +19,6 @@
 
         h1 {
             font-family: $font-family;
-            font-style: normal;
             font-weight: 800;
             font-size: 109.704px;
             line-height: 94.5%;
@@ -63,7 +62,7 @@
                 font-size: 37.9952px;
                 color: $color-white;
                 transition: .3s all;
-
+                cursor: pointer;
                 &:nth-of-type(1) {
                     background-color: $color-blue;
                     margin-right: 2rem;
@@ -113,3 +112,152 @@
         }
     }
 }
+
+
+@media screen and (max-width:1500px) {
+    .app__Hero{
+        padding: 4rem 4rem ;
+        &__image{
+            &__label{
+                right: 26%;
+                font-size: 40px;
+                padding: 1.3rem .9rem;
+                width: auto;
+            }
+            img{
+                max-width: 550px;
+            }
+        }
+
+
+        &__content{
+            .testmonialPara{
+                font-size: 30px;
+            }
+            h1{
+                font-size: 75px;
+            }
+            h3{font-size: 40px;}
+            p{font-size: 20px;}
+            &__buttons {
+                button{ font-size: 25px !important;}
+            }
+        }
+
+       
+    }
+
+
+}   
+
+@media screen and (max-width:1350px) {
+ .app__Hero{
+    padding: 2rem 2rem;
+ }   
+}
+
+@media screen and (max-width:1250px) {
+    .app__Hero{
+        &__image{
+            &__label{
+                right: 26%;
+                font-size: 40px;
+                padding: 1.3rem .9rem;
+                width: auto;
+            }
+            img{
+                max-width: 500px;
+            }
+        }
+        &__content{
+            &__buttons{
+                button:nth-of-type(1) {
+                    margin-right: 1rem;
+                }
+            }
+        }
+    }   
+   }
+
+   @media screen and (max-width:1100px) {
+    .app__Hero{
+        padding: 1rem 2rem;
+        flex-direction: column;
+        justify-content: center;
+        &__content{
+            p{
+                width: 70%;
+            }
+        }
+        &__image{
+            margin-top: 5rem;
+            margin-left: 0%;
+            img{
+                width: 100%;
+                max-width: 100%;
+                max-height: 100%;
+
+            }
+        }
+    }
+   }
+
+
+   @media screen and (max-width:900px) {
+    .app__Hero{
+        &__content{
+            p{
+                width: 90%;
+            }
+        }
+        &__image{
+            &__label{
+                right: 0%;
+            }
+        }
+    }
+   }
+
+   @media screen and (max-width:600px) {
+    .app__Hero{
+        padding: 1rem;
+        &__content{
+            .testmonialPara{font-size: 25px;}
+            h1{font-size: 50px;}
+            h3{ font-size: 33px;}
+            &__buttons{
+                button{ padding: .5rem 1rem;}
+                button:nth-of-type(1) {
+                    margin-right: 1rem;
+                }
+            }
+        }
+        &__image{
+            &__label{
+                right: 0%;
+                width: 100%;
+                font-size: 25px;
+            }
+        }
+    }
+   }
+
+
+
+   @media screen and (max-width:450px) {
+    .app__Hero{
+        &__content{
+            &__buttons {
+                justify-content: space-around;
+                button{font-size: 20px !important;}
+                button:nth-of-type(1){
+                    margin: 0% !important;
+                }
+                button:nth-of-type(2){
+                    margin: 0% !important;
+                    span{margin: 0% !important;}
+                }
+            }
+        }
+    }
+   }
