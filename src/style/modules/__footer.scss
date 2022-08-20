@@ -2,6 +2,7 @@
     color: $color-white;
     display: flex;
     flex-direction: column;
+    overflow: hidden !important;
 
     &__getInTouch {
         background-color: $color-blue;

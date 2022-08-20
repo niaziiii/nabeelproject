@@ -2,8 +2,9 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 7rem 5rem;
-
+    padding: 1rem 3rem;
+    height: 100vh;
+    overflow: hidden !important;
     &__content {
         flex: 0 0 50%;
         font-family: $font-family  !important;
@@ -44,10 +45,8 @@
             font-weight: 400;
             font-size: 25px;
             line-height: 161.5%;
-            /* or 40px */
-
             letter-spacing: -0.02em;
-            text-transform: uppercase;
+            text-transform: lowercase;
         }
 
         &__buttons {
@@ -93,6 +92,7 @@
         position: relative;
         .speical-Heading{
             position: absolute;
+            display: none;
             top:-7%;
             left: 7%;
             z-index: 10;
@@ -110,7 +110,7 @@
             }
         }
         &__label{
-            // font-family: $font-family;
+            font-family: $font-family;
             position: absolute;
             background-color: $color-white;
             color: $color-black;
@@ -133,10 +133,32 @@
     }
 }
 
+@media screen and (max-width:2570px) {
+    .app__Hero{
+        &__image{
+            img{
+                max-height: 1750px;
+                max-width: 780px;
+            }
+        }
+    }
+}
+@media screen and (max-width:1850px) {
+    .app__Hero{
+        &__image{
+            img{
+                max-height: 1750px;
+                max-width: 650px;
+            }
+        }
+    }
+}
+
 
 @media screen and (max-width:1500px) {
     .app__Hero{
         padding: 4rem 4rem ;
+        
         &__image{
             &__label{
                 right: 26%;
@@ -170,10 +192,17 @@
 
 }   
 
-@media screen and (max-width:1350px) {
+@media screen and (max-width:1370px) {
  .app__Hero{
     padding: 4rem 2rem;
+    &__image{
+        img{
+            max-height: 1750px;
+            max-width: 500px;
+        }
+    }
  }   
+
 }
 
 @media screen and (max-width:1250px) {
@@ -201,7 +230,9 @@
 
    @media screen and (max-width:1100px) {
     .speical-Heading{ display: none;}
+
     .app__Hero{
+        height: 100%;
         padding: 1rem 2rem;
         flex-direction: column;
         justify-content: center;

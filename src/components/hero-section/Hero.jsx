@@ -1,9 +1,13 @@
 import React from 'react'
 import profileImg from './../../assets/profile.jpeg'
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+
 function Hero() {
+  AOS.init({duration:2000})
   return (
-    <div style={{color:'white'}} className='app__Hero'>
-      <div className="app__Hero__content">
+    <div style={{color:'white'}} className='app__Hero' >
+      <div className="app__Hero__content" data-aos='zoom-in'>
         <p className="testmonialPara">Hello i am</p>
         <h1 >UI / UX Designer </h1>
         <h3>Nabeel AHmed Nazim</h3>
@@ -14,7 +18,7 @@ function Hero() {
             <button>About Me <span>{'>'}</span></button>
         </div>
       </div>
-      <div className="app__Hero__image">
+      <div className="app__Hero__image" data-aos='zoom-in'>
         <div className="speical-Heading">
           <h1>UI/UX <br /> Design</h1>
         </div>
