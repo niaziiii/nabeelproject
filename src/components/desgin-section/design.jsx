@@ -6,6 +6,7 @@ import { RiLineChartFill } from 'react-icons/ri'
 function design() {
     return (
         <div className='app__design'>
+
             <div className="app__design__boxes">
                 <i><MdImportantDevices fontSize={33} color={'white'} /></i>
                 <h3>UI/UX <br /> Design</h3>
@@ -17,6 +18,10 @@ function design() {
             <div className="app__design__boxes">
                 <i><RiLineChartFill fontSize={33} color={'white'} /></i>
                 <h3>Social <br /> Design</h3>
+                <div className="triangle__container">
+                    <div class="triangle-up"></div>
+                </div>
+
             </div>
         </div>
     )

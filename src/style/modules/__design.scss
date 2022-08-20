@@ -16,8 +16,9 @@
         i {
             margin-bottom: 2rem;
             text-align: start;
-            svg{
-            font-size: 58.8497px;
+
+            svg {
+                font-size: 58.8497px;
             }
         }
 
@@ -32,46 +33,75 @@
             letter-spacing: -0.02em;
             text-transform: capitalize
         }
+
         &:nth-of-type(1) {
             background-color: $color-blue;
         }
+
         &:nth-of-type(2) {
             margin: 0 5%;
         }
-    }
-}
-
-
-@media screen and (max-width:1050px) {
-    .app__design{
-    &__boxes {
-        h3{
-            font-size: 40px;
+        &:nth-of-type(3) {
+            position: relative;
         }
     }
 }
+
+.triangle__container {
+    position: absolute;
+    top: -15%;
+    right: -8%;
+    .triangle-up {
+        width: 0;
+        height: 0;
+        border-left: 35px solid transparent;
+        border-right: 35px solid transparent;
+        border-bottom: 60px solid $color-green;
+    }
 }
+
+@media screen and (max-width:1050px) {
+    .app__design {
+        &__boxes {
+            h3 {
+                font-size: 40px;
+            }
+        }
+    }
+}
+
 @media screen and (max-width:900px) {
-    .app__design{
+
+    .app__design {
         padding: 2rem;
+    }
 }
-}
+
 @media screen and (max-width:769px) {
-    .app__design{
+    .app__design {
         flex-direction: column;
-        &__boxes{
+
+        &__boxes {
             margin-bottom: 3rem;
-            &:nth-of-type(2){
+
+            &:nth-of-type(2) {
                 margin: 0;
                 margin-bottom: 3rem;
             }
         }
+    }
 }
-}
+
 @media screen and (max-width:600px) {
-    .app__design{
+    .triangle__container {
+        position: absolute;
+        top: -15%;
+        right: -2%;
+    }
+    .app__design {
         padding: 2rem 1rem;
-        &__boxes{
+
+        &__boxes {
             width: 100%;
         }
     }

@@ -3,6 +3,7 @@
     display: flex;
     flex-direction: column;
     overflow: hidden !important;
+
     &__heading {
         display: flex;
         flex-direction: row;
@@ -43,6 +44,7 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+
         h2 {
             font-family: $font-family;
             font-style: normal;
@@ -54,7 +56,7 @@
         }
 
         p {
-            margin: 3rem  0 2rem 0;
+            margin: 3rem 0 2rem 0;
             font-family: $font-family;
             font-style: normal;
             font-weight: 400;
@@ -84,6 +86,7 @@
     &__image {
         flex: 1;
         width: 100%;
+
         div {
             background-color: $color-grey-black;
             max-width: 799px;
@@ -94,34 +97,61 @@
 
 
 @media screen and (max-width:1100px) {
-    .app__projects__content{
+    .app__projects__content {
         margin: 3rem 0;
         flex-direction: column !important;
-        &__text{
+
+        &__text {
             padding-left: 0% !important;
         }
-        &__image{
+
+        &__image {
             text-align: center;
             display: flex;
             justify-content: center;
             align-items: center;
-            div{
+
+            div {
                 max-width: 100%;
                 width: 100%;
             }
         }
-        
+
     }
 }
 
 @media screen and (max-width:900px) {
-    .app__projects{
+    .app__projects__content {
+        &__image {
+            div {
+                max-width: 100%;
+                width: 100%;
+                height: 400px;
+            }
+        }
+    }
+    .app__projects {
         padding: 5rem 2rem;
+
+        &__heading {
+            h1 {
+                font-size: 50px;
+            }
+        }
     }
 }
-@media screen and (max-width:600px) {
-    .app__projects{
-        padding: 3rem 1rem;
-        
+    @media screen and (max-width:600px) {
+        .app__projects {
+            padding: 3rem 1rem;
+
+        }
+        .app__projects__content {
+            &__image {
+                div {
+                    max-width: 100%;
+                    width: 100%;
+                    height: 300px;
+                }
+            }
+        }
     }
-}

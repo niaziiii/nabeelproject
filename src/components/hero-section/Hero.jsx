@@ -15,6 +15,9 @@ function Hero() {
         </div>
       </div>
       <div className="app__Hero__image">
+        <div className="speical-Heading">
+          <h1>UI/UX <br /> Design</h1>
+        </div>
         <img src={profileImg} alt="" />
         <h2 className="app__Hero__image__label">Behence.Net/Nabeelnazim</h2>
       </div>
