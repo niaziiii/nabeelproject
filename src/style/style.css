@@ -466,6 +466,123 @@
     padding: 3rem 1rem;
   }
 }
+.app__footer {
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+}
+.app__footer__getInTouch {
+  background-color: #1D51FD;
+  padding: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.app__footer__getInTouch div {
+  margin: auto;
+  width: 80% !important;
+}
+.app__footer__getInTouch div h1 {
+  font-family: sans-serif;
+  font-weight: 800;
+  font-size: 106.076px;
+  line-height: 90.5%;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  margin: 1rem 0;
+}
+.app__footer__getInTouch div h2 {
+  font-family: sans-serif;
+  font-weight: 800;
+  font-size: 106.076px;
+  line-height: 90.5%;
+  letter-spacing: -0.02em;
+  color: #1D51FD;
+  text-shadow: 0 0 3px white;
+  margin: 0rem 0 3rem 0;
+}
+.app__footer__getInTouch div button {
+  background-color: #FFFFFF;
+  border: none;
+  outline: none;
+  padding: 1rem 3rem;
+  font-weight: 900;
+  font-size: 30px;
+}
+.app__footer__copyRight {
+  display: flex;
+  flex-direction: row;
+  padding: 3rem 0;
+  align-items: center;
+  justify-content: space-around;
+}
+.app__footer__copyRight div p {
+  margin-top: 1rem;
+  font-size: 30px;
+  font-family: sans-serif;
+}
+.app__footer__copyRight div p a {
+  color: #2CFE80;
+}
+.app__footer__copyRight ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.app__footer__copyRight ul li {
+  list-style: none;
+  margin-right: 2rem;
+}
+.app__footer__copyRight ul li svg {
+  font-size: 40px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1400px) {
+  .app__footer__getInTouch div h1 {
+    font-size: 60px;
+  }
+  .app__footer__getInTouch div h2 {
+    font-size: 60px;
+  }
+  .app__footer__getInTouch div button {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .app__footer__getInTouch {
+    padding: 3rem 0% !important;
+  }
+  .app__footer__getInTouch div {
+    width: 100% !important;
+    padding: 0 2rem;
+  }
+}
+@media screen and (max-width: 900px) {
+  .app__footer__getInTouch div h1 {
+    font-size: 50px;
+  }
+  .app__footer__getInTouch div h2 {
+    font-size: 40px;
+  }
+  .app__footer__getInTouch div button {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .app__footer__getInTouch div {
+    padding: 0 1rem;
+  }
+  .app__footer__copyRight {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .app__footer__copyRight ul {
+    margin-top: 2rem;
+  }
+}
 body {
   background-color: #050407;
 }/*# sourceMappingURL=style.css.map */
